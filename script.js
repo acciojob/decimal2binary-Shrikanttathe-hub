@@ -1,16 +1,22 @@
-function decimalToBinary(num) {
-  //Write you code here
-	//let num = 13 , output = "" ;
-    while(num >= 2) {
-    let reminder = num % 2 ; 
-    output = reminder + output;
-    num = parseInt(num / 2) ;
-}
-if(num === 1){
-    output = 1 + output ;
-}
-//console.log(output);
-  
-}
+function decimalToBinary(num1) { 
 
-window.decimalToBinary = decimalToBinary;
+    if (num1 === 0) return "0"; 
+
+  
+
+    let arr = []; 
+
+    for (; num1 > 0; num1 = Math.floor(num1 / 2)) { 
+
+        arr.unshift(num1 % 2); 
+
+    } 
+
+    return arr.join(""); 
+} 
+
+  
+let givenNumber = 10; 
+let result = decimalToBinary(givenNumber); 
+
+console.log(result);
