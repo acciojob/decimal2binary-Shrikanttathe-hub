@@ -1,20 +1,23 @@
-function decimalToBinary(num1) { 
+// function decimalToBinary(num1) { 
 
-    if (num1 === 0) return "0"; 
+//     if (num1 === 0) return "0"; 
 
   
 
-    let arr = []; 
+//     let arr = []; 
 
-    for (; num1 > 0; num1 = Math.floor(num1 / 2)) { 
+//     for (; num1 > 0; num1 = Math.floor(num1 / 2)) { 
 
-        arr.unshift(num1 % 2); 
+//         arr.unshift(num1 % 2); 
 
-    } 
+//     } 
 
-    return arr.join(""); 
-} 
+//     return arr.join(""); 
+// } 
 
+function decimalToinary(num1){
+	if(num1 >>> 0).toString(2);
+}
   
 let givenNumber = 10; 
 let result = decimalToBinary(givenNumber); 
