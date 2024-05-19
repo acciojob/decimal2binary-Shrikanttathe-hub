@@ -15,9 +15,18 @@
 //     return arr.join(""); 
 // } 
 
-function decimalToinary(num1){
-	if(num1 >>> 0).toString(2);
+// function decimalToBinary(num1){
+// 	return (num1 >>> 0).toString(2);
+// }
+
+function decimalTobinary (num1){
+	let binary = "";
+	while(num1 > 0) {
+		binary = num1 % 2 + binary;
+		num1 = num1 / 2;
+	}
 }
+
   
 let givenNumber = 10; 
 let result = decimalToBinary(givenNumber); 
